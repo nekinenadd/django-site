@@ -1,0 +1,11 @@
+{% load static %}
+
+
+
+    <div class="col">
+      <div class="h-100 p-5 bg-light border rounded-3">
+        <h2>{{post.title}}</h2>
+        <p> {{ post.excerpt }}</p>
+        <a href="{% url "posts-detail-page" post.slug %}" class="btn btn-outline-secondary" type="button">Example button</a>
+      </div>
+    </div>
